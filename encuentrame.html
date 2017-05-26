@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>encuentra  a laboratoria</title>
+	
+<style media="screen">
+  #mapa{
+    width:400px;
+    height:400px;
+  }
+</style>
+</head>
+
+<body> 
+<div id="mapa"></div>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGqLTgaXdNU9LvxlLqrT5rQ2aN_UdHO2U&callback=initMap" type="text/javascript">
+    </script>
+<script type="text/javascript">
+  function initMap(){
+    var mapaContenedor = document.getElementById("mapa");
+  var coordenadasLaboratoria={lat:19.4699103, lng:-99.3249405};
+ 
+  var mapa= new google.maps.Map(
+  	mapaContenedor,{
+     zoom:13,
+      center: coordenadasLaboratoria
+    }
+  )
+  }
+  
+</script>
+	
+	<!--<script async defer src ="AIzaSyBppLEXF-iwfdg0PQlOHpxdmiblvLtdKpc"></script>-->
+	
+</body>
+</html>
+
+
+
+
